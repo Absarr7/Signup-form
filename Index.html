@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup form</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="bg">
+        <div class="content">
+            <header>Signup Form</header>
+            <form action="#">
+                <div class="input">
+                    <span class="fas fa-user"></span>
+                    <input type="text" required placeholder="Email">
+                    <div class="icons">
+                        <i class="icon1 fas fa-exclamation"></i>
+                        <i class="icon2 fas fa-check"></i>
+                    </div>
+                </div>
+                <div class="input pass">
+                    <span class="fas fa-lock"></span>
+                    <input type="password" id="password" class="password" required placeholder="password">
+                    <span class="eye">
+
+                        <i class="fa fa-eye" id="eye" aria-hidden="true" onclick="toggle()"></i>
+                        <i class="fa fa-eye-slash" id = "eyeSlash" onclick="toggle()"></i>
+                    </span>
+                </div>
+                <div class="input cpass">
+                    <span class="fa fa-phone"></span>
+                    <input type="tel" class="phone" required placeholder="phone">
+                </div>
+                <div class="forgotpass">
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <div class="submit">
+                    <input type="submit" value="SIGNUP">
+                </div>
+            </form>
+            <div class="login">
+                Or login with</div>
+            <div class="links">
+                <div class="facebook">
+                    <i class="fab fa-facebook-f"><span>Facebook</span></i>
+                </div>
+                <div class="instagram">
+                    <i class="fab fa-instagram"><span>Instagram</span></i>
+                </div>
+                <div class="loginnow">
+                    <label for="login">Already have an account?</label>
+                    <button class="btnlogin"><a href="#">LOGIN</a></button>
+                </div>
+            </div>
+        </div>
+        <script>
+            var state = false;
+
+            function toggle() {
+                if (state) {
+                    document.getElementById("password").setAttribute("type", "password");
+                    document.getElementById("eye").style.display = "inline-block";
+                    document.getElementById("eyeSlash").style.display = "none";
+                    state = false;
+                } else {
+                    document.getElementById("password").setAttribute("type", "text");
+                    document.getElementById("eye").style.display = "none";
+                    document.getElementById("eyeSlash").style.display = "inline-block";
+                    state = true;
+                }
+            }
+        </script>
+</body>
+
+</html>
