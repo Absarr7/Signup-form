@@ -209,29 +209,25 @@ form .input .icons {
 }
 
 .links {
-    display: flex;
     cursor: pointer;
     color: black;
-    margin: 0 0 20px 0;
 }
 
 .facebook {
     border-radius: 4px;
-    width: 40%;
-    height: 45px;
-    line-height: 45px;
-    bottom: 132px;
-    position: absolute;
+    padding: 10px 20px;
+    margin: 0 160px;
+    position: fixed;
+    top: 70%;
 }
 
 .instagram {
     border-radius: 4px;
-    width: 40%;
-    height: 45px;
-    line-height: 45px;
-    margin-left: 159px;
-    bottom: 132px;
-    position: absolute;
+    padding: 10px 15px;
+    margin: 0 70px;
+    position: fixed;
+    top: 70%;
+    left: 32%;
 }
 
 .facebook {
@@ -303,10 +299,10 @@ i span {
 }
 
 label {
-    position: absolute;
-    width: 70%;
-    top: 84%;
-    left: 50%;
     color: white;
     transform: translate(-50%, -50%);
+    display: block;
+    margin: 24% 50%;
+    padding: 13px 11px;
+    width: 94%;
 }
